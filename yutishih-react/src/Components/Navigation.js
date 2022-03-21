@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
+import { Routes, Route } from "react-router-dom"
+import { Link } from "react-router-dom";
+
 import Logo from '../Images/logo.png';
 import Cart from '../Images/cart.png';
 
 class Navigation extends Component {
   render() {
     return (
-      <div className='navi-wrap container'>
+      <div className='navi-wrap'>
           <nav className='navi-bar'>
-              <img src={Logo} className='logo' />
+                <Link to="/"><img src={Logo} className='logo' /></Link>
               <ul>
-                  <li><a href="">About</a></li>
-                  <li><a href="">Contact</a></li>
-                  <li><a href="">Portfolio</a></li>
+                  <li><Link to="/projects">Projects</Link></li>
+                  <li><Link to="/about">About</Link></li>
+                  <li><Link to="/blog">Blog</Link></li>                
               </ul>
               <img src={Cart} className='cart-icon' />
           </nav>
