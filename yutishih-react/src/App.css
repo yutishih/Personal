@@ -42,6 +42,7 @@ nav ul li a{
   color: #fff;
   text-decoration: none;
   position: relative;
+  font-size: 20px;
 }
 nav ul li a::after{
   content: ' ';
@@ -121,9 +122,6 @@ nav ul li a:hover::after{
 }
 
 /*Project Page*/
-.Projects nav ul li a{
-  color: #111;
-}
 .Projects .content-wrapper{
   padding-top: 40px;
 }
@@ -137,7 +135,6 @@ nav ul li a:hover::after{
 .Projects .project-section a{
   color: #fff;
   font-size: 5.0rem;
-  font-family: 'Playfair Display', serif;
   text-decoration: none;
 }
 .Projects .project-section .text-wrapper{
@@ -159,3 +156,43 @@ nav ul li a:hover::after{
   width: 100%;
 }
 
+
+/* About Page */
+.About .content-wrapper{
+  position: absolute;
+  top: 10%;
+}
+.About .image-section{
+  display: inline-block;
+  width: 50%;
+}
+.About .text-section{
+  display: inline-block;
+  width: 50%;
+  padding: 10% 10% 10% 5%;
+}
+.About .text-section h3{
+  font-size: 80px;
+  color: #fff;
+  margin-bottom: 5%;
+}
+.About .text-section h4{
+  font-size: 50px;
+  color: rgb(236, 130, 130);
+  margin-bottom: 3%;
+}
+.About .text-section p{
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 3%;
+}
+.About .text-section a{
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border: 2px solid #fff;
+  display: inline-block;
+  align-items: center;
+}
