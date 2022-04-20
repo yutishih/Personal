@@ -196,3 +196,24 @@ nav ul li a:hover::after{
   display: inline-block;
   align-items: center;
 }
+.About .image-section img{
+  position: absolute;
+  display: block;
+  width: 25%;
+  padding: 10px;
+}
+.About .image-section .taiwan-1{
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+}
+.About .image-section .dallas-1{
+  top: 400px;
+  left: 500px;
+  z-index: 2;
+}
+.About .image-section .naples-1{
+  top: 700px;
+  left: 200px;
+  z-index: 3;
+}

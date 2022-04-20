@@ -1,6 +1,8 @@
 import './App.css';
 import Navigation from './Components/Navigation';
-import project_3 from "./Images/test-3.png";
+import Taiwan from "./Images/taiwan.png";
+import Dallas from "./Images/dallas.png";
+import Naples from "./Images/naples.png";
 
 function About() {
   return (
@@ -10,7 +12,9 @@ function About() {
         <div className='content-wrapper'>
           <div className='row'>
             <div className='image-section'>
-              <img src={project_3} />
+              <img src={Taiwan} className="taiwan-1" />
+              <img src={Dallas} className="dallas-1" />
+              <img src={Naples} className="naples-1"/>
             </div>
             <div className="text-section">
               <h3>About Yuti</h3>
