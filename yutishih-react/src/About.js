@@ -1,10 +1,33 @@
 import './App.css';
+import React, { useState } from "react";
 import Navigation from './Components/Navigation';
 import Taiwan from "./Images/taiwan.png";
 import Dallas from "./Images/dallas.png";
 import Naples from "./Images/naples.png";
 
+
 function About() {
+
+  const [styleTaiwan, setStyleTaiwan] = useState("imgStyleSecond");
+  const [styleDallas, setStyleDallas] = useState("imgStyleOrginal");
+  const [styleNaples, setStyleNaples] = useState("imgStyleOrginal");
+
+  const changeStyleTW = () => {
+    setStyleTaiwan("imgStyleSecond");
+    setStyleDallas("imgStyleOrginal");
+    setStyleNaples("imgStyleOrginal");
+  };
+  const changeStyleDL = () => {
+    setStyleTaiwan("imgStyleOrginal");
+    setStyleDallas("imgStyleSecond");
+    setStyleNaples("imgStyleOrginal");
+  };
+  const changeStyleNP = () => {
+    setStyleTaiwan("imgStyleOrginal");
+    setStyleDallas("imgStyleOrginal");
+    setStyleNaples("imgStyleSecond");
+  };
+
   return (
     <div className="About">
       <div className='container'>
@@ -12,9 +35,21 @@ function About() {
         <div className='content-wrapper'>
           <div className='row'>
             <div className='image-section'>
-              <img src={Taiwan} className="taiwan-1" />
-              <img src={Dallas} className="dallas-1" />
-              <img src={Naples} className="naples-1"/>
+              <div className="img-wrapper">
+                <div className={styleTaiwan}>
+                  <img src={Taiwan} className="taiwan-1" onClick={changeStyleTW} />
+                </div>
+              </div>
+              <div className='img-wrapper'>
+                <div className={styleDallas}>
+                  <img src={Dallas} className="dallas-1"  onClick={changeStyleDL} />
+                </div>
+              </div>
+              <div className='img-wrapper'>
+                <div className={styleNaples}>
+                  <img src={Naples} className="naples-1"  onClick={changeStyleNP} />
+                </div>
+              </div>
             </div>
             <div className="text-section">
               <h3>About Yuti</h3>

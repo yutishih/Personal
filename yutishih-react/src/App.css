@@ -205,7 +205,7 @@ nav ul li a:hover::after{
 .About .image-section .taiwan-1{
   top: 100px;
   left: 100px;
-  z-index: 1;
+  z-index: 3;
 }
 .About .image-section .dallas-1{
   top: 400px;
@@ -215,5 +215,20 @@ nav ul li a:hover::after{
 .About .image-section .naples-1{
   top: 700px;
   left: 200px;
-  z-index: 3;
+  z-index: 1;
+}
+.imgStyleOrginal{
+  opacity: 0.5;
+}
+.imgStyleOrginal img{
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+.imgStyleSecond{
+  opacity: 1;
+  z-index: 4;
+}
+.imgStyleSecond img{
+  transform: scale(1.1);
+  transition: all .5s ease;
 }
