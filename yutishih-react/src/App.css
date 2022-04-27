@@ -159,7 +159,7 @@ nav ul li a:hover::after{
 
 /* About Page */
 .About .content-wrapper{
-  position: absolute;
+  position: relative;
   top: 10%;
 }
 .About .image-section{
@@ -231,4 +231,13 @@ nav ul li a:hover::after{
 .imgStyleSecond img{
   transform: scale(1.1);
   transition: all .5s ease;
+}
+.introductionPeriodTW{
+  display: block;
+}
+.introductionPeriodDL{
+  display: none;
+}
+.introductionPeriodNP{
+  display: block;
 }
